@@ -11,6 +11,9 @@ BackgroundHandler.set_background("./home/Background.webp")
 def display_home(): # Task for Nguyen Dang Minh, Ninh Duy Tuan
     st.balloons()
     # Your function goes here!
-    st.write('Hello')
+   st.markdown( """ <style> .title { background-color: #FFE4E1; font-size: 3em; padding: 0.5em; border-radius: 0.25em; } </style> """, unsafe_allow_html=True ) 
+   st.markdown('<div class="title">WELCOME TO OUR SIMPLEST PERSONALITY CHECK</div>', unsafe_allow_html=True)
+   if st.button("Start Your Personality Test"): 
+      st.write("Starting the personality test...")
 
 display_home()
